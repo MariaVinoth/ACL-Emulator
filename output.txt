@@ -1,0 +1,6 @@
+192.168.7.1   permitted
+192.168.1.1   denied
+192.168.1.5   denied
+192.168.3.2   permitted
+192.168.4.2   denied
+185.168.1.1   permitted

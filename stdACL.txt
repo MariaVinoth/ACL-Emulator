@@ -1,0 +1,5 @@
+#standardACL
+access-list 1 deny 172.16.4.13 0.0.0.0
+access-list 1 permit 172.16.0.0 0.0.255.255
+Interface E0
+Ip access-group 1 out

@@ -1,0 +1,10 @@
+#extendedACL
+access-list 103 deny tcp 192.168.1.1 0.0.0.0
+                           192.168.2.0 0.0.0.0 eq 20
+access-list 103 deny tcp 192.168.1.5 0.0.0.0
+                           192.168.2.0 0.0.0.0 eq 80
+access-list 103 permit tcp 192.168.0.0 0.0.0.0
+                           192.168.2.0 0.0.0.0 eq 161
+access-list 103 permit ip any any
+interface E0 #Torronto
+ip access-group 103 in
